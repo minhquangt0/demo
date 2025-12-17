@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Giới thiệu Công ty AMCOLAB</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#20B2AA", // Light Sea Green / Teal from logo
+                        secondary: "#1A3C4D", // Dark Slate / Deep Teal for headers
+                        "background-light": "#F8FAFC", // Slate 50
+                        "background-dark": "#0F172A", // Slate 900
+                        "card-light": "#FFFFFF",
+                        "card-dark": "#1E293B",
+                        "text-light": "#334155",
+                        "text-dark": "#E2E8F0",
+                    },
+                    fontFamily: {
+                        display: ["'Noto Sans JP'", "sans-serif"],
+                        sans: ["'Inter'", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                        xl: "1rem",
+                    },
+                },
+            },
+        };
+    </script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Noto+Sans+JP:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Inter', 'Noto Sans JP', sans-serif;
+        }
+        .dotted-line {
+            background-image: linear-gradient(to right, #94a3b8 33%, rgba(255,255,255,0) 0%);
+            background-position: bottom;
+            background-size: 6px 1px;
+            background-repeat: repeat-x;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark transition-colors duration-300 min-h-screen flex flex-col items-center py-10 px-4 sm:px-8">
+<main class="w-full max-w-7xl bg-card-light dark:bg-card-dark shadow-2xl rounded-xl overflow-hidden relative flex flex-col">
+<header class="flex justify-between items-start p-8 sm:p-12 pb-6">
+<div class="flex items-center gap-6">
+<div class="border-4 border-primary dark:border-primary text-primary dark:text-primary font-bold text-5xl sm:text-6xl px-4 py-2 rounded-lg flex items-center justify-center">
+                    01
+                </div>
+<h1 class="text-4xl sm:text-5xl font-bold text-secondary dark:text-white tracking-wide">
+                    Giới thiệu công ty
+                </h1>
+</div>
+<div class="flex items-center gap-3">
+<div class="text-right">
+</div>
+<img alt="AMCOLAB Logo" class="h-12 sm:h-14 object-contain mb-1" src="./logo-amcolab.webp" />
+</div>
+</header>
+<div class="flex-grow grid grid-cols-1 lg:grid-cols-2 gap-8 px-8 sm:px-12 pb-12">
+<div class="flex flex-col gap-6">
+<div class="bg-slate-50 dark:bg-slate-800/50 rounded-lg overflow-hidden shadow-sm border border-slate-200 dark:border-slate-700">
+<div class="bg-secondary text-white py-3 px-6 font-bold text-lg flex items-center gap-2">
+<span class="material-icons-round text-primary">business</span>
+                        Thông tin công ty
+                    </div>
+<div class="p-6 space-y-4 text-sm sm:text-base">
+<div class="flex flex-col sm:flex-row gap-2 sm:gap-4 border-b border-dashed border-slate-300 dark:border-slate-600 pb-3 last:border-0 last:pb-0">
+<span class="font-bold text-slate-600 dark:text-slate-300 w-32 shrink-0">Tên công ty</span>
+<span class="text-slate-800 dark:text-slate-100 font-medium">AMCOLAB TECHNOLOGY</span>
+</div>
+<div class="flex flex-col sm:flex-row gap-2 sm:gap-4 border-b border-dashed border-slate-300 dark:border-slate-600 pb-3 last:border-0 last:pb-0">
+<span class="font-bold text-slate-600 dark:text-slate-300 w-32 shrink-0">Đại diện</span>
+<span class="text-slate-800 dark:text-slate-100">Nguyễn Thị Quý</span>
+</div>
+<div class="flex flex-col sm:flex-row gap-2 sm:gap-4 border-b border-dashed border-slate-300 dark:border-slate-600 pb-3 last:border-0 last:pb-0">
+<span class="font-bold text-slate-600 dark:text-slate-300 w-32 shrink-0">Số lượng nhân viên</span>
+<span class="text-slate-800 dark:text-slate-100">50 người (Nhân viên chính thức)</span>
+</div>
+<div class="flex flex-col sm:flex-row gap-2 sm:gap-4 border-b border-dashed border-slate-300 dark:border-slate-600 pb-3 last:border-0 last:pb-0">
+<span class="font-bold text-slate-600 dark:text-slate-300 w-32 shrink-0">Vốn điều lệ</span>
+<span class="text-slate-800 dark:text-slate-100">5 triệu Yên</span>
+</div>
+<div class="flex flex-col sm:flex-row gap-2 sm:gap-4 pb-1">
+<span class="font-bold text-slate-600 dark:text-slate-300 w-32 shrink-0">Thành lập</span>
+<span class="text-slate-800 dark:text-slate-100">Tháng 01 năm 2023</span>
+</div>
+</div>
+</div>
+<div class="relative group rounded-lg overflow-hidden shadow-md h-64 border border-slate-200 dark:border-slate-700">
+<img
+  alt="Ngoại thất tòa nhà trụ sở AMCOLAB"
+  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+  src="./amcolab_hq.png"
+/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-60"></div>
+<div class="absolute bottom-3 left-3 text-white text-xs font-medium bg-black/40 px-2 py-1 rounded backdrop-blur-sm">
+                        Trụ sở chính
+                    </div>
+</div>
+</div>
+<div class="flex flex-col gap-6">
+<div class="bg-slate-50 dark:bg-slate-800/50 rounded-lg overflow-hidden shadow-sm border border-slate-200 dark:border-slate-700">
+<div class="bg-secondary text-white py-3 px-6 font-bold text-lg flex items-center gap-2">
+<span class="material-icons-round text-primary">layers</span>
+                        Tổng quan dịch vụ
+                    </div>
+<div class="p-6 space-y-4 text-sm sm:text-base">
+<div class="flex flex-col sm:flex-row gap-2 sm:gap-4 border-b border-dashed border-slate-300 dark:border-slate-600 pb-3 last:border-0 last:pb-0">
+<span class="font-bold text-slate-600 dark:text-slate-300 w-32 shrink-0 pt-1">Lĩnh vực kinh doanh</span>
+<ul class="text-slate-800 dark:text-slate-100 space-y-1 list-none">
+<li class="flex items-center gap-2"><span class="text-primary font-bold">①</span> Phát triển hệ thống</li>
+<li class="flex items-center gap-2"><span class="text-primary font-bold">②</span> Bảo trì hệ thống</li>
+<li class="flex items-center gap-2"><span class="text-primary font-bold">③</span> Kiểm thử hệ thống</li>
+</ul>
+</div>
+<div class="flex flex-col sm:flex-row gap-2 sm:gap-4 border-b border-dashed border-slate-300 dark:border-slate-600 pb-3 last:border-0 last:pb-0">
+<span class="font-bold text-slate-600 dark:text-slate-300 w-32 shrink-0">Trang web</span>
+<div class="flex flex-col">
+<a class="text-primary hover:text-teal-400 hover:underline transition-colors" href="https://amcolab.vn/">https://amcolab.vn/</a>
+<a class="text-primary hover:text-teal-400 hover:underline transition-colors" href="https://amcolab.jp/">https://amcolab.jp/</a>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-2 sm:gap-4 pb-1">
+<span class="font-bold text-slate-600 dark:text-slate-300 w-32 shrink-0">Văn phòng</span>
+<span class="text-slate-800 dark:text-slate-100">Thủ đô Hà Nội, Việt Nam</span>
+</div>
+</div>
+</div>
+<div class="relative group rounded-lg overflow-hidden shadow-md h-64 border border-slate-200 dark:border-slate-700">
+<img
+  alt="Các thành viên đội ngũ AMCOLAB chụp ảnh tập thể"
+  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+  src="./amcolab_team.jpg"
+/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-60"></div>
+<div class="absolute bottom-3 left-3 text-white text-xs font-medium bg-black/40 px-2 py-1 rounded backdrop-blur-sm">
+                        Đội ngũ của chúng tôi
+                    </div>
+</div>
+</div>
+</div>
+<footer class="mt-auto bg-slate-100 dark:bg-slate-900 px-8 sm:px-12 py-4 border-t border-slate-200 dark:border-slate-700 flex flex-col sm:flex-row justify-between items-center gap-4">
+<div class="text-primary font-medium italic text-lg sm:text-xl">
+                Amazing. Collaborate. Laboratory
+            </div>
+<div class="flex items-center gap-4 text-sm text-slate-500 dark:text-slate-400">
+<div class="flex items-center gap-2">
+<span class="material-icons-round text-lg">public</span>
+<a class="hover:text-primary transition-colors" href="https://www.amcolab.vn/">https://www.amcolab.vn/</a>
+</div>
+</div>
+</footer>
+</main>
+<div class="fixed bottom-6 right-6 flex gap-3 z-50">
+  <button id="btnPrev" type="button" aria-label="Trang trước"
+    class="bg-card-light dark:bg-card-dark text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700 p-3 rounded-full shadow-lg border border-slate-200 dark:border-slate-600 transition-all focus:outline-none focus:ring-2 focus:ring-primary group">
+    <span class="material-icons-round group-hover:-translate-x-1 transition-transform">arrow_back</span>
+  </button>
+
+  <button id="btnNext" type="button" aria-label="Trang tiếp theo"
+    class="bg-primary text-white hover:bg-teal-600 p-3 rounded-full shadow-lg shadow-teal-500/30 transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary group">
+    <span class="material-icons-round group-hover:translate-x-1 transition-transform">arrow_forward</span>
+  </button>
+</div>
+
+
+<div class="fixed bottom-6 left-6 z-50">
+<button class="bg-secondary text-white p-3 rounded-full shadow-lg hover:bg-slate-700 transition-colors focus:outline-none focus:ring-2 focus:ring-secondary" onclick="document.documentElement.classList.toggle('dark')">
+<span class="material-icons-round">dark_mode</span>
+</button>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('btnPrev')?.addEventListener('click', () => {
+      window.location.href = './page0.html';
+    });
+    document.getElementById('btnNext')?.addEventListener('click', () => {
+      window.location.href = './page2.html';
+    });
+  });
+</script>
+</body></html>

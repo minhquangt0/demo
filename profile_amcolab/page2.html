@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Giới thiệu Đội ngũ AMCOLAB</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#20B2AA", // Light Sea Green / Teal from logo
+                        secondary: "#1A3C4D", // Dark Slate / Deep Teal for headers
+                        "background-light": "#F8FAFC", // Slate 50
+                        "background-dark": "#0F172A", // Slate 900
+                        "card-light": "#FFFFFF",
+                        "card-dark": "#1E293B",
+                        "text-light": "#334155",
+                        "text-dark": "#E2E8F0",
+                    },
+                    fontFamily: {
+                        display: ["'Noto Sans JP'", "sans-serif"],
+                        sans: ["'Inter'", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                        xl: "1rem",
+                    },
+                },
+            },
+        };
+    </script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Noto+Sans+JP:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Inter', 'Noto Sans JP', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-text-light dark:text-dark transition-colors duration-300 min-h-screen flex flex-col items-center py-10 px-4 sm:px-8">
+<main class="w-full max-w-7xl bg-card-light dark:bg-card-dark shadow-2xl rounded-xl overflow-hidden relative flex flex-col min-h-[800px]">
+<header class="flex justify-between items-start p-8 sm:p-12 pb-6 border-b border-slate-100 dark:border-slate-800">
+<div class="flex items-center gap-6">
+<div class="border-4 border-primary dark:border-primary text-primary dark:text-primary font-bold text-5xl sm:text-6xl px-4 py-2 rounded-lg flex items-center justify-center">
+                    02
+                </div>
+<div>
+<h1 class="text-4xl sm:text-5xl font-bold text-secondary dark:text-white tracking-wide mb-1">
+                        Giới thiệu nhân sự
+                    </h1>
+<p class="text-slate-500 dark:text-slate-400 font-medium tracking-wider uppercase text-sm">Đội ngũ lãnh đạo của chúng tôi</p>
+</div>
+</div>
+<div class="flex flex-col items-end justify-center">
+<img alt="AMCOLAB Logo" class="h-12 sm:h-14 object-contain mb-1" src="./logo-amcolab.webp" />
+
+</div>
+</header>
+<div class="flex-grow p-8 sm:p-12">
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 h-full">
+<div class="flex flex-col h-full bg-slate-50 dark:bg-slate-800/40 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-lg transition-shadow duration-300">
+<div class="h-2 bg-primary"></div>
+<div class="p-6 flex flex-col gap-4 flex-grow">
+<div class="flex items-center gap-4 mb-2">
+<img alt="Quy Nguyen" class="w-16 h-16 rounded-full object-cover shadow-md border-2 border-primary" src="quy.png"/>
+<div>
+<span class="block text-primary font-bold text-sm tracking-widest uppercase">CEO / Giám đốc điều hành</span>
+<h3 class="text-2xl font-bold text-secondary dark:text-white">Nguyễn Quý</h3>
+</div>
+</div>
+<div class="space-y-4 text-sm">
+<div>
+<h4 class="flex items-center gap-2 font-bold text-secondary dark:text-slate-200 mb-2 border-b border-slate-200 dark:border-slate-600 pb-1">
+<span class="material-icons-round text-primary text-base">school</span>
+                                    Học vấn & Kinh nghiệm
+                                </h4>
+<ul class="list-disc list-inside text-slate-600 dark:text-slate-300 space-y-1 pl-1 marker:text-primary">
+<li>Tốt nghiệp ĐH Bách Khoa Hà Nội (CNTT) năm 2006</li>
+<li>Gần 20 năm kinh nghiệm phát triển IT cho thị trường Nhật Bản (bao gồm 2 năm tại Hitachi Solutions)</li>
+<li>10 năm kinh nghiệm kỹ sư phát triển + 10 năm kinh nghiệm tư vấn IT</li>
+</ul>
+</div>
+<div>
+<h4 class="flex items-center gap-2 font-bold text-secondary dark:text-slate-200 mb-2 border-b border-slate-200 dark:border-slate-600 pb-1">
+<span class="material-icons-round text-primary text-base">light_mode</span>
+                                    Triết lý kinh doanh
+                                </h4>
+<p class="text-slate-600 dark:text-slate-300 italic bg-white dark:bg-slate-900/50 p-3 rounded border-l-4 border-primary">
+                                    "Luôn theo đuổi sự đổi mới, cung cấp giá trị tốt nhất cho khách hàng thông qua sự phát triển của toàn đội ngũ."
+                                </p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="flex flex-col h-full bg-slate-50 dark:bg-slate-800/40 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-lg transition-shadow duration-300">
+<div class="h-2 bg-secondary"></div>
+<div class="p-6 flex flex-col gap-4 flex-grow">
+<div class="flex items-center gap-4 mb-2">
+<img alt="Nguyen Le" class="w-16 h-16 rounded-full object-cover shadow-md border-2 border-secondary" src="nguyen.png"/>
+<div>
+<span class="block text-secondary dark:text-slate-300 font-bold text-sm tracking-widest uppercase">CPO / Giám đốc sản phẩm</span>
+<h3 class="text-2xl font-bold text-secondary dark:text-white">Lê Nguyễn</h3>
+</div>
+</div>
+<div class="space-y-4 text-sm">
+<div>
+<h4 class="flex items-center gap-2 font-bold text-secondary dark:text-slate-200 mb-2 border-b border-slate-200 dark:border-slate-600 pb-1">
+<span class="material-icons-round text-secondary text-base">school</span>
+                                    Học vấn & Kinh nghiệm
+                                </h4>
+<ul class="list-disc list-inside text-slate-600 dark:text-slate-300 space-y-1 pl-1 marker:text-secondary">
+<li>Tốt nghiệp ĐH Bách Khoa Hà Nội (CNTT) năm 2006</li>
+<li>Chuyên gia quản lý sản phẩm</li>
+<li>Kinh nghiệm triển khai các sản phẩm toàn cầu</li>
+<li>Chứng chỉ PMP/Scrum Master</li>
+</ul>
+</div>
+<div>
+<h4 class="flex items-center gap-2 font-bold text-secondary dark:text-slate-200 mb-2 border-b border-slate-200 dark:border-slate-600 pb-1">
+<span class="material-icons-round text-secondary text-base">light_mode</span>
+                                    Triết lý sản phẩm
+                                </h4>
+<p class="text-slate-600 dark:text-slate-300 italic bg-white dark:bg-slate-900/50 p-3 rounded border-l-4 border-secondary">
+                                    "Lấy trải nghiệm người dùng làm trung tâm, giải quyết vấn đề bằng sự kết hợp giữa công nghệ và thiết kế."
+                                </p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="flex flex-col h-full bg-slate-50 dark:bg-slate-800/40 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-lg transition-shadow duration-300">
+<div class="h-2 bg-slate-400"></div>
+<div class="p-6 flex flex-col gap-4 flex-grow">
+<div class="flex items-center gap-4 mb-2">
+<img alt="Van Nguyen" class="w-16 h-16 rounded-full object-cover shadow-md border-2 border-slate-400" src="van.png"/>
+<div>
+<span class="block text-slate-500 dark:text-slate-300 font-bold text-sm tracking-widest uppercase">COO / Giám đốc vận hành</span>
+<h3 class="text-2xl font-bold text-secondary dark:text-white">Nguyễn Vân</h3>
+</div>
+</div>
+<div class="space-y-4 text-sm">
+<div>
+<h4 class="flex items-center gap-2 font-bold text-secondary dark:text-slate-200 mb-2 border-b border-slate-200 dark:border-slate-600 pb-1">
+<span class="material-icons-round text-slate-500 text-base">school</span>
+                                    Học vấn & Kinh nghiệm
+                                </h4>
+<ul class="list-disc list-inside text-slate-600 dark:text-slate-300 space-y-1 pl-1 marker:text-slate-400">
+<li>Tốt nghiệp ĐH Bách Khoa Hà Nội (CNTT) năm 2007</li>
+<li>Chuyên gia về quản trị tổ chức và chiến lược nhân sự</li>
+<li>Kinh nghiệm xây dựng quy trình vận hành hiệu quả</li>
+</ul>
+</div>
+<div>
+<h4 class="flex items-center gap-2 font-bold text-secondary dark:text-slate-200 mb-2 border-b border-slate-200 dark:border-slate-600 pb-1">
+<span class="material-icons-round text-slate-500 text-base">light_mode</span>
+                                    Phương châm vận hành
+                                </h4>
+<p class="text-slate-600 dark:text-slate-300 italic bg-white dark:bg-slate-900/50 p-3 rounded border-l-4 border-slate-400">
+                                    "Tối ưu hóa con người và quy trình để xây dựng nền tảng tổ chức vững mạnh và bền vững."
+                                </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer class="mt-auto bg-slate-100 dark:bg-slate-900 px-8 sm:px-12 py-4 border-t border-slate-200 dark:border-slate-700 flex flex-col sm:flex-row justify-between items-center gap-4">
+<div class="text-primary font-medium italic text-lg sm:text-xl">
+                Amazing. Collaborate. Laboratory
+            </div>
+<div class="flex items-center gap-4 text-sm text-slate-500 dark:text-slate-400">
+<div class="flex items-center gap-2">
+<span class="material-icons-round text-lg">public</span>
+<a class="hover:text-primary transition-colors" href="https://www.amcolab.vn/">https://www.amcolab.vn/</a>
+</div>
+</div>
+</footer>
+
+</main>
+<div class="fixed bottom-6 right-6 flex gap-3 z-50">
+  <button id="btnPrev" type="button" aria-label="Trang trước"
+    class="bg-card-light dark:bg-card-dark text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700 p-3 rounded-full shadow-lg border border-slate-200 dark:border-slate-600 transition-all focus:outline-none focus:ring-2 focus:ring-primary group">
+    <span class="material-icons-round group-hover:-translate-x-1 transition-transform">arrow_back</span>
+  </button>
+
+  <button id="btnNext" type="button" aria-label="Trang tiếp theo"
+    class="bg-primary text-white hover:bg-teal-600 p-3 rounded-full shadow-lg shadow-teal-500/30 transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary group">
+    <span class="material-icons-round group-hover:translate-x-1 transition-transform">arrow_forward</span>
+  </button>
+</div>
+
+
+<div class="fixed bottom-6 left-6 z-50">
+<button class="bg-secondary text-white p-3 rounded-full shadow-lg hover:bg-slate-700 transition-colors focus:outline-none focus:ring-2 focus:ring-secondary" onclick="document.documentElement.classList.toggle('dark')">
+<span class="material-icons-round">dark_mode</span>
+</button>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('btnPrev')?.addEventListener('click', () => {
+      window.location.href = './page1.html';
+    });
+    document.getElementById('btnNext')?.addEventListener('click', () => {
+      window.location.href = './page3.html';
+    });
+  });
+</script>
+</body></html>

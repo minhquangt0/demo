@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Các dự án tiêu biểu - AMCOLAB</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&amp;family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
+
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#20B2AA", // LightSeaGreen
+                        secondary: "#008B8B", // DarkCyan
+                        "background-light": "#f1f5f9", // Slate-100
+                        "background-dark": "#0f172a", // Slate-900
+                        "card-dark": "#1e293b", // Slate-800
+                    },
+                    fontFamily: {
+                        sans: ['"Noto Sans JP"', '"Inter"', 'sans-serif'],
+                        display: ['"Inter"', 'sans-serif'],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                        'xl': '1rem',
+                        '2xl': '1.5rem',
+                        '3xl': '2rem',
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    }
+                },
+            },
+        };
+    </script>
+<style>
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: rgba(0,0,0,0.05);
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 10px;
+        }
+        .dark .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #475569;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+        .dark .glass {
+            background: rgba(30, 41, 59, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+        .image-gradient {
+            background: linear-gradient(to top, rgba(15, 23, 42, 0.6) 0%, rgba(15, 23, 42, 0) 50%);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark min-h-screen flex items-center justify-center font-sans transition-colors duration-300 p-4 lg:p-8">
+<div class="relative w-full max-w-7xl bg-white dark:bg-slate-900 rounded-3xl shadow-2xl overflow-hidden flex flex-col min-h-[850px] transition-colors duration-300 border border-slate-200 dark:border-slate-800">
+<header class="pt-8 px-10 pb-4 flex justify-between items-start z-20">
+<div class="flex items-center gap-6">
+<div class="bg-primary/10 dark:bg-primary/20 text-primary dark:text-teal-300 font-display font-bold text-4xl px-5 py-3 rounded-xl backdrop-blur-sm">
+                    05
+                </div>
+<div>
+<h1 class="text-3xl font-bold text-slate-800 dark:text-white tracking-wide">Dự án tiêu biểu</h1>
+<p class="text-sm font-semibold text-slate-400 dark:text-slate-500 tracking-[0.2em] uppercase mt-1">Major Project Cases</p>
+</div>
+</div>
+<div class="transition-all">
+<div class="flex items-center gap-3">
+<img alt="AMCOLAB Logo" class="h-12 sm:h-14 object-contain mb-1" src="./logo-amcolab.webp"/>
+</div></div>
+</header>
+<div class="px-10 z-20 flex items-center gap-2 mb-6">
+<div class="w-1 h-6 bg-primary rounded-full"></div>
+<h2 class="text-xl font-bold text-slate-700 dark:text-slate-200">Thành tựu phát triển ứng dụng AI (Tiêu biểu)</h2>
+</div>
+<div class="flex-grow z-10 px-10 pb-10 overflow-y-auto custom-scrollbar">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 h-full">
+
+<div class="glass rounded-2xl overflow-hidden card-hover transition-all duration-300 flex flex-col h-full group border border-slate-100 dark:border-slate-800">
+<div class="h-48 relative overflow-hidden bg-slate-200 dark:bg-slate-800">
+<img alt="AiTuber Application Interface" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" src="aituber.png"/>
+<div class="absolute inset-0 image-gradient"></div>
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 rounded-full text-xs font-bold bg-white/90 text-purple-600 shadow-sm backdrop-blur-md">Giải trí</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="flex items-center gap-2 mb-3">
+<span class="material-symbols-outlined text-primary text-2xl">smart_toy</span>
+<h3 class="text-xl font-bold text-slate-800 dark:text-white group-hover:text-primary transition-colors">Ứng dụng AiTuber</h3>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-300 mb-4 leading-relaxed">
+                            Ứng dụng livestream nhân vật AI có khả năng đối thoại theo thời gian thực. Phân tích bình luận của người dùng ngay lập tức và phản hồi bằng giọng nói, hoạt ảnh giàu cảm xúc.
+                        </p>
+<div class="mb-4 pt-3 border-t border-slate-100 dark:border-slate-700/50">
+<p class="text-[11px] font-bold text-slate-500 dark:text-slate-400 mb-1">QUY MÔ / PHẠM VI ĐẢM NHẬN</p>
+<p class="text-xs text-slate-700 dark:text-slate-200">Phát triển từ đầu ~ Phát hành ~ Hỗ trợ vận hành</p>
+<p class="text-xs text-slate-700 dark:text-slate-200">Thời gian phát triển: 24 tháng</p>
+<p class="text-xs text-slate-700 dark:text-slate-200">Vận hành: Đang tiếp tục xử lý với đội ngũ 5 người</p>
+</div>
+<div class="bg-slate-50 dark:bg-slate-800/50 rounded-xl p-4 border border-slate-100 dark:border-slate-700/50 mt-auto">
+<p class="text-[10px] font-bold text-slate-400 mb-2 uppercase tracking-wider">Công nghệ chính</p>
+<div class="flex flex-wrap gap-2 mb-3">
+<span class="text-[10px] px-2 py-1 bg-white dark:bg-slate-700 rounded text-slate-600 dark:text-slate-300 font-mono border border-slate-200 dark:border-slate-600">Flutter</span>
+<span class="text-[10px] px-2 py-1 bg-white dark:bg-slate-700 rounded text-slate-600 dark:text-slate-300 font-mono border border-slate-200 dark:border-slate-600">Ruby on Rails</span>
+<span class="text-[10px] px-2 py-1 bg-white dark:bg-slate-700 rounded text-slate-600 dark:text-slate-300 font-mono border border-slate-200 dark:border-slate-600">VRM. Three.js</span>
+<span class="text-[10px] px-2 py-1 bg-white dark:bg-slate-700 rounded text-slate-600 dark:text-slate-300 font-mono border border-slate-200 dark:border-slate-600">LLM</span>
+<span class="text-[10px] px-2 py-1 bg-white dark:bg-slate-700 rounded text-slate-600 dark:text-slate-300 font-mono border border-slate-200 dark:border-slate-600">Style-bert-vit2, Azure</span>
+<span class="text-[10px] px-2 py-1 bg-white dark:bg-slate-700 rounded text-slate-600 dark:text-slate-300 font-mono border border-slate-200 dark:border-slate-600">AWS GPU</span>
+<span class="text-[10px] px-2 py-1 bg-white dark:bg-slate-700 rounded text-slate-600 dark:text-slate-300 font-mono border border-slate-200 dark:border-slate-600">AWS Lambda</span>
+</div>
+<div class="flex items-center gap-1 text-xs text-slate-400 border-t border-slate-200 dark:border-slate-700 pt-2 mt-2">
+<span class="material-symbols-outlined text-[14px]">source</span>
+<span>Nguồn: Dự án khách hàng</span>
+</div>
+</div>
+</div>
+</div>
+
+<div class="glass rounded-2xl overflow-hidden card-hover transition-all duration-300 flex flex-col h-full group border border-slate-100 dark:border-slate-800">
+<div class="h-48 relative overflow-hidden bg-slate-200 dark:bg-slate-800">
+<img alt="Mobile Order App Interface" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" src="v-cast.png"/>
+<div class="absolute inset-0 image-gradient"></div>
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 rounded-full text-xs font-bold bg-white/90 text-orange-600 shadow-sm backdrop-blur-md">Food Tech</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="flex items-center gap-2 mb-3">
+<span class="material-symbols-outlined text-primary text-2xl">restaurant_menu</span>
+<h3 class="text-xl font-bold text-slate-800 dark:text-white group-hover:text-primary transition-colors">AI Order App (AICO)</h3>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-300 mb-4 leading-relaxed">
+                            Ứng dụng đặt món bằng AI dành cho nhà hàng, hỗ trợ cả những yêu cầu không rõ ràng bằng ngôn ngữ tự nhiên. Thực hiện tùy chỉnh menu và gợi ý món ăn thông qua hình thức đối thoại.
+                        </p>
+<div class="mb-4 pt-3 border-t border-slate-100 dark:border-slate-700/50">
+<p class="text-[11px] font-bold text-slate-500 dark:text-slate-400 mb-1">QUY MÔ / PHẠM VI ĐẢM NHẬN</p>
+<p class="text-xs text-slate-700 dark:text-slate-200">Phát triển từ đầu ~ Phát hành ~ Hỗ trợ vận hành</p>
+<p class="text-xs text-slate-700 dark:text-slate-200">Thời gian phát triển: 6 tháng</p>
+<p class="text-xs text-slate-700 dark:text-slate-200">Vận hành: Đang tiếp tục xử lý với đội ngũ 9 người</p>
+</div>
+<div class="bg-slate-50 dark:bg-slate-800/50 rounded-xl p-4 border border-slate-100 dark:border-slate-700/50 mt-auto">
+<p class="text-[10px] font-bold text-slate-400 mb-2 uppercase tracking-wider">Công nghệ chính</p>
+<div class="flex flex-wrap gap-2 mb-3">
+<span class="text-[10px] px-2 py-1 bg-white dark:bg-slate-700 rounded text-slate-600 dark:text-slate-300 font-mono border border-slate-200 dark:border-slate-600">Flutter</span>
+<span class="text-[10px] px-2 py-1 bg-white dark:bg-slate-700 rounded text-slate-600 dark:text-slate-300 font-mono border border-slate-200 dark:border-slate-600">Firebase</span>
+<span class="text-[10px] px-2 py-1 bg-white dark:bg-slate-700 rounded text-slate-600 dark:text-slate-300 font-mono border border-slate-200 dark:border-slate-600">LLM, Dify</span>
+<span class="text-[10px] px-2 py-1 bg-white dark:bg-slate-700 rounded text-slate-600 dark:text-slate-300 font-mono border border-slate-200 dark:border-slate-600">Reactjs</span>
+<span class="text-[10px] px-2 py-1 bg-white dark:bg-slate-700 rounded text-slate-600 dark:text-slate-300 font-mono border border-slate-200 dark:border-slate-600">Style-bert-vit2, Azure</span>
+<span class="text-[10px] px-2 py-1 bg-white dark:bg-slate-700 rounded text-slate-600 dark:text-slate-300 font-mono border border-slate-200 dark:border-slate-600">AWS GPU</span>
+</div>
+<div class="flex items-center gap-1 text-xs text-slate-400 border-t border-slate-200 dark:border-slate-700 pt-2 mt-2">
+<span class="material-symbols-outlined text-[14px]">source</span>
+<span>Nguồn: Dự án khách hàng</span>
+</div>
+</div>
+</div>
+</div>
+
+<div class="glass rounded-2xl overflow-hidden card-hover transition-all duration-300 flex flex-col h-full group border border-slate-100 dark:border-slate-800">
+<div class="h-48 relative overflow-hidden bg-slate-200 dark:bg-slate-800">
+<img alt="Analytics Dashboard" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" src="sushi.png"/>
+<div class="absolute inset-0 image-gradient"></div>
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 rounded-full text-xs font-bold bg-white/90 text-blue-600 shadow-sm backdrop-blur-md">Doanh nghiệp</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="flex items-center gap-2 mb-3">
+<span class="material-symbols-outlined text-primary text-2xl">inventory</span>
+<h3 class="text-xl font-bold text-slate-800 dark:text-white group-hover:text-primary transition-colors">Hệ thống đánh giá trình bày Sushi AI</h3>
+</div>
+<div class="bg-slate-50 dark:bg-slate-800/50 rounded-xl p-4 border border-slate-100 dark:border-slate-700/50 text-xs flex-grow">
+<div class="grid grid-cols-[100px_1fr] gap-x-2 gap-y-3">
+<div class="text-slate-400 font-bold border-b border-slate-200 dark:border-slate-700 pb-1">Khách hàng</div>
+<div class="text-slate-700 dark:text-slate-200 border-b border-slate-200 dark:border-slate-700 pb-1">Chuỗi giao hàng Sushi lớn</div>
+<div class="text-slate-400 font-bold border-b border-slate-200 dark:border-slate-700 pb-1">Loại hình</div>
+<div class="text-slate-700 dark:text-slate-200 border-b border-slate-200 dark:border-slate-700 pb-1">Hệ thống AI đánh giá trình bày / Nhận diện hình ảnh</div>
+<div class="text-slate-400 font-bold border-b border-slate-200 dark:border-slate-700 pb-1">Quyền sở hữu</div>
+<div class="text-slate-700 dark:text-slate-200 border-b border-slate-200 dark:border-slate-700 pb-1">Thuộc về khách hàng</div>
+<div class="text-slate-400 font-bold border-b border-slate-200 dark:border-slate-700 pb-1">Tính năng</div>
+<div class="text-slate-700 dark:text-slate-200 border-b border-slate-200 dark:border-slate-700 pb-1 leading-relaxed">
+                                    Từ ảnh chụp khay sushi bằng smartphone, AI phát hiện loại khay và đường viền các miếng sushi. Dựa trên mẫu (hàng, cột, vùng, số lượng) để tự động chấm điểm cách trình bày. Cung cấp lý do trừ điểm và cung cấp API đánh giá cho các hệ thống khác.
+                                </div>
+<div class="text-slate-400 font-bold border-b border-slate-200 dark:border-slate-700 pb-1">Quy mô/Phạm vi</div>
+<div class="text-slate-700 dark:text-slate-200 border-b border-slate-200 dark:border-slate-700 pb-1">
+                                    Xử lý toàn bộ từ xác định yêu cầu ~ thiết kế kiến trúc AI ~ PoC YOLO ~ triển khai Mask R-CNN ~ thiết kế quy tắc đánh giá ~ triển khai màn hình quản lý mẫu ~ thiết kế vận hành (Giai đoạn 1: khoảng 2.000 giờ - Quy mô Trung đến Lớn)
+                                </div>
+<div class="text-slate-400 font-bold pt-1">Stack</div>
+<div class="pt-1">
+<div class="flex flex-wrap gap-1">
+<span class="px-2 py-0.5 bg-white dark:bg-slate-700 rounded border border-slate-200 dark:border-slate-600 text-slate-600 dark:text-slate-300">Python</span>
+<span class="px-2 py-0.5 bg-white dark:bg-slate-700 rounded border border-slate-200 dark:border-slate-600 text-slate-600 dark:text-slate-300">PyTorch (Mask R-CNN)</span>
+<span class="px-2 py-0.5 bg-white dark:bg-slate-700 rounded border border-slate-200 dark:border-slate-600 text-slate-600 dark:text-slate-300">PostgreSQL</span>
+<span class="px-2 py-0.5 bg-white dark:bg-slate-700 rounded border border-slate-200 dark:border-slate-600 text-slate-600 dark:text-slate-300">Flutter</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</main>
+
+<div class="fixed bottom-6 right-6 flex gap-3 z-50">
+  <button id="btnPrev" type="button" aria-label="Trang trước"
+    class="bg-card-light dark:bg-card-dark text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700 p-3 rounded-full shadow-lg border border-slate-200 dark:border-slate-600 transition-all focus:outline-none focus:ring-2 focus:ring-primary group">
+    <span class="material-icons-round group-hover:-translate-x-1 transition-transform">arrow_back</span>
+  </button>
+
+  <button id="btnNext" type="button" aria-label="Trang sau"
+    class="bg-primary text-white hover:bg-teal-600 p-3 rounded-full shadow-lg shadow-teal-500/30 transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary group">
+    <span class="material-icons-round group-hover:translate-x-1 transition-transform">arrow_forward</span>
+  </button>
+</div>
+
+<div class="fixed bottom-6 left-6 z-50">
+<button class="bg-secondary text-white p-3 rounded-full shadow-lg hover:bg-slate-700 transition-colors focus:outline-none focus:ring-2 focus:ring-secondary" onclick="document.documentElement.classList.toggle('dark')">
+<span class="material-icons-round">dark_mode</span>
+</button>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('btnPrev')?.addEventListener('click', () => {
+      window.location.href = './page4.html';
+    });
+    document.getElementById('btnNext')?.addEventListener('click', () => {
+      window.location.href = './page6.html';
+    });
+  });
+</script>
+</body></html>
