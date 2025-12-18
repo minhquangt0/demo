@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Các dự án tiêu biểu - AMCOLAB</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&amp;family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Noto+Sans+JP:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#20B2AA", // LightSeaGreen
+                        secondary: "#008B8B", // DarkCyan
+                        "background-light": "#f1f5f9", // Slate-100
+                        "background-dark": "#0f172a", // Slate-900
+                        "card-dark": "#1e293b", // Slate-800
+                    },
+                    fontFamily: {
+                        sans: ['"Noto Sans JP"', '"Inter"', 'sans-serif'],
+                        display: ['"Inter"', 'sans-serif'],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                        'xl': '1rem',
+                        '2xl': '1.5rem',
+                        '3xl': '2rem',
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    }
+                },
+            },
+        };
+    </script>
+<style>
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: rgba(0,0,0,0.05);
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 10px;
+        }
+        .dark .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #475569;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+        .dark .glass {
+            background: rgba(30, 41, 59, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+        .image-gradient {
+            background: linear-gradient(to top, rgba(15, 23, 42, 0.6) 0%, rgba(15, 23, 42, 0) 50%);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark min-h-screen flex items-center justify-center font-sans transition-colors duration-300 p-4 lg:p-8">
+<div class="relative w-full max-w-7xl bg-white dark:bg-slate-900 rounded-3xl shadow-2xl overflow-hidden flex flex-col min-h-[850px] transition-colors duration-300 border border-slate-200 dark:border-slate-800">
+<div class="absolute right-0 top-0 w-2/3 h-full pointer-events-none z-0 overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-l from-transparent via-white/40 to-white dark:via-slate-900/40 dark:to-slate-900"></div>
+</div>
+<header class="pt-8 px-10 pb-4 flex justify-between items-start z-20">
+<div class="flex items-center gap-6">
+<div class="bg-primary/10 dark:bg-primary/20 text-primary dark:text-teal-300 font-display font-bold text-4xl px-5 py-3 rounded-xl backdrop-blur-sm">
+                    10
+                </div>
+<div>
+<h1 class="text-3xl font-bold text-slate-800 dark:text-white tracking-wide">Dự án tiêu biểu</h1>
+<p class="text-sm font-semibold text-slate-400 dark:text-slate-500 tracking-[0.2em] uppercase mt-1">Major Project Cases</p>
+</div>
+</div>
+<div class="transition-all">
+<div class="flex items-center gap-3">
+<div class="text-right">
+</div>
+<img alt="AMCOLAB Logo" class="h-12 sm:h-14 object-contain mb-1" src="./logo-amcolab.webp"/>
+</div></div>
+</header>
+<div class="px-10 z-20 flex items-center gap-2 mb-6">
+<div class="w-1 h-6 bg-primary rounded-full"></div>
+<h2 class="text-xl font-bold text-slate-700 dark:text-slate-200">Thành tựu phát triển Nền tảng Nhân sự & Tuyển dụng (Pick Up)</h2>
+</div>
+<div class="flex-grow z-10 px-10 pb-10 overflow-y-auto custom-scrollbar">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 h-full">
+
+<div class="glass rounded-2xl overflow-hidden card-hover transition-all duration-300 flex flex-col h-full group border border-slate-100 dark:border-slate-800">
+<div class="h-48 relative overflow-hidden bg-slate-200 dark:bg-slate-800">
+<img alt="Job matching platform for pharmacists" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" src="jobmatching.png"/>
+<div class="absolute inset-0 image-gradient"></div>
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 rounded-full text-xs font-bold bg-white/90 text-purple-600 shadow-sm backdrop-blur-md">HR / Matching</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="flex items-center gap-2 mb-3">
+<div class="w-8 h-8 rounded-lg bg-primary/10 dark:bg-primary/20 text-primary flex items-center justify-center">
+<span class="material-icons-round text-lg">handshake</span>
+</div>
+<h3 class="text-xl font-bold text-slate-800 dark:text-white group-hover:text-primary transition-colors">Nền tảng Kết nối Dược sĩ x Nhà thuốc</h3>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-300 mb-4 leading-relaxed">
+      Trang web kết nối dược sĩ và các hiệu thuốc (cửa hàng). Ngoài các tính năng tìm kiếm, ứng tuyển và kết nối, hệ thống còn trang bị đầy đủ các tính năng vận hành như quản lý ca làm việc/giờ công, thanh toán thù lao, quản lý hóa đơn/trạng thái nạp tiền và bảng điều khiển thống kê. Chúng tôi đã phát triển bao gồm cả màn hình quản lý phù hợp với luồng nghiệp vụ thực tế.
+    </p>
+<div class="mb-4 pt-3 border-t border-slate-100 dark:border-slate-700/50">
+<p class="text-xs text-slate-500 dark:text-slate-400">
+<span class="font-bold">QUY MÔ / PHẠM VI</span><br/><br/>
+        Xử lý yêu cầu ~ Thiết kế, Phát triển, Kiểm thử, Bàn giao vận hành<br/><br/>
+<span class="font-medium">Thời gian:</span> 4 tháng　<span class="font-medium">Quy mô:</span> 10 mm<br/>
+      </p>
+</div>
+<div class="bg-slate-50 dark:bg-slate-800/50 rounded-xl p-4 border border-slate-100 dark:border-slate-700/50 mt-auto">
+<p class="text-[10px] font-bold text-slate-400 mb-2 uppercase tracking-wider">Công nghệ chính</p>
+<div class="flex flex-wrap gap-2 mb-3">
+<span class="px-2.5 py-1 rounded-full text-xs font-medium bg-white dark:bg-slate-900/40 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700">Python</span><span class="px-2.5 py-1 rounded-full text-xs font-medium bg-white dark:bg-slate-900/40 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700">React</span><span class="px-2.5 py-1 rounded-full text-xs font-medium bg-white dark:bg-slate-900/40 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700">Matching</span><span class="px-2.5 py-1 rounded-full text-xs font-medium bg-white dark:bg-slate-900/40 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700">Quản lý giờ công</span><span class="px-2.5 py-1 rounded-full text-xs font-medium bg-white dark:bg-slate-900/40 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700">Thanh toán/Quyết toán</span><span class="px-2.5 py-1 rounded-full text-xs font-medium bg-white dark:bg-slate-900/40 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700">Dashboard</span>
+</div>
+<div class="flex items-center gap-1 text-xs text-slate-400 border-t border-slate-200 dark:border-slate-700 pt-2 mt-2">
+<span class="material-icons-round text-[14px]">link</span>
+<span class="font-medium">nguồn</span>
+<span>work.yaku-dachi.com</span>
+</div>
+</div>
+</div>
+</div>
+
+<div class="glass rounded-2xl overflow-hidden card-hover transition-all duration-300 flex flex-col h-full group border border-slate-100 dark:border-slate-800">
+<div class="h-48 relative overflow-hidden bg-slate-200 dark:bg-slate-800">
+<img alt="Job portal for foreign workers in Japan" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" src="jobportal.png"/>
+<div class="absolute inset-0 image-gradient"></div>
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 rounded-full text-xs font-bold bg-white/90 text-purple-600 shadow-sm backdrop-blur-md">Cổng thông tin việc làm</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="flex items-center gap-2 mb-3">
+<div class="w-8 h-8 rounded-lg bg-primary/10 dark:bg-primary/20 text-primary flex items-center justify-center">
+<span class="material-icons-round text-lg">travel_explore</span>
+</div>
+<h3 class="text-xl font-bold text-slate-800 dark:text-white group-hover:text-primary transition-colors">ten-shoku.jp (Cổng tuyển dụng cho người nước ngoài)</h3>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-300 mb-4 leading-relaxed">
+      Trang web giới thiệu việc làm và chuyển việc dành cho người nước ngoài đang làm việc tại Nhật Bản. Chúng tôi đã xây dựng các tính năng cơ bản từ thu hút khách hàng đến ứng tuyển như tìm kiếm việc làm, luồng ứng tuyển, bài viết/nội dung, liên hệ, cùng với hệ thống CMS/quản lý dễ vận hành. Cấu trúc được thiết kế tối ưu cho chiến lược SEO trung và dài hạn.
+    </p>
+<div class="mb-4 pt-3 border-t border-slate-100 dark:border-slate-700/50">
+<p class="text-xs text-slate-500 dark:text-slate-400">
+<span class="font-bold">QUY MÔ / PHẠM VI</span><br/><br/>
+        Thiết kế, Phát triển, Kiểm thử, Phát hành chính thức<br/><br/>
+<span class="font-medium">Thời gian:</span> 6 tháng　<span class="font-medium">Quy mô:</span> 15 mm<br/>
+      </p>
+</div>
+<div class="bg-slate-50 dark:bg-slate-800/50 rounded-xl p-4 border border-slate-100 dark:border-slate-700/50 mt-auto">
+<p class="text-[10px] font-bold text-slate-400 mb-2 uppercase tracking-wider">Công nghệ chính</p>
+<div class="flex flex-wrap gap-2 mb-3">
+<span class="px-2.5 py-1 rounded-full text-xs font-medium bg-white dark:bg-slate-900/40 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700">Ruby on Rails</span><span class="px-2.5 py-1 rounded-full text-xs font-medium bg-white dark:bg-slate-900/40 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700">Job Search</span><span class="px-2.5 py-1 rounded-full text-xs font-medium bg-white dark:bg-slate-900/40 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700">SEO</span><span class="px-2.5 py-1 rounded-full text-xs font-medium bg-white dark:bg-slate-900/40 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700">CMS</span><span class="px-2.5 py-1 rounded-full text-xs font-medium bg-white dark:bg-slate-900/40 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700">Admin</span>
+</div>
+<div class="flex items-center gap-1 text-xs text-slate-400 border-t border-slate-200 dark:border-slate-700 pt-2 mt-2">
+<span class="material-icons-round text-[14px]">link</span>
+<span class="font-medium">nguồn</span>
+<span>ten-shoku.jp</span>
+</div>
+</div>
+</div>
+</div>
+
+<div class="glass rounded-2xl overflow-hidden card-hover transition-all duration-300 flex flex-col h-full group border border-slate-100 dark:border-slate-800">
+<div class="h-48 relative overflow-hidden bg-slate-200 dark:bg-slate-800">
+<img alt="AI job recommendation and diagnosis site" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" src="fev.png"/>
+<div class="absolute inset-0 image-gradient"></div>
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 rounded-full text-xs font-bold bg-white/90 text-purple-600 shadow-sm backdrop-blur-md">AI Tuyển dụng</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="flex items-center gap-2 mb-3">
+<div class="w-8 h-8 rounded-lg bg-primary/10 dark:bg-primary/20 text-primary flex items-center justify-center">
+<span class="material-icons-round text-lg">psychology</span>
+</div>
+<h3 class="text-xl font-bold text-slate-800 dark:text-white group-hover:text-primary transition-colors">Persons AI Career (Bản Beta)</h3>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-300 mb-4 leading-relaxed">
+      Trang web chuyển việc tận dụng trí tuệ nhân tạo. Thông qua các bài kiểm tra tính cách, IQ, tinh thần và định hướng nghề nghiệp, hệ thống trực quan hóa thiên hướng của người dùng và đưa ra gợi ý việc làm dựa trên kết quả chẩn đoán. Chúng tôi cũng tích hợp thử nghiệm A/B để tối ưu hóa tỷ lệ chuyển đổi (CV), cho phép thực hiện chu kỳ cải tiến liên tục.
+    </p>
+<div class="mb-4 pt-3 border-t border-slate-100 dark:border-slate-700/50">
+<p class="text-xs text-slate-500 dark:text-slate-400">
+<span class="font-bold">QUY MÔ / PHẠM VI</span><br/><br/>
+        Thiết kế, Phát triển, Kiểm thử, Phát hành bản Beta<br/><br/>
+<span class="font-medium">Thời gian:</span> 2 tháng　<span class="font-medium">Quy mô:</span> 10 mm<br/>
+      </p>
+</div>
+<div class="bg-slate-50 dark:bg-slate-800/50 rounded-xl p-4 border border-slate-100 dark:border-slate-700/50 mt-auto">
+<p class="text-[10px] font-bold text-slate-400 mb-2 uppercase tracking-wider">Công nghệ chính</p>
+<div class="flex flex-wrap gap-2 mb-3">
+<span class="px-2.5 py-1 rounded-full text-xs font-medium bg-white dark:bg-slate-900/40 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700">Ruby on Rails</span><span class="px-2.5 py-1 rounded-full text-xs font-medium bg-white dark:bg-slate-900/40 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700">Chẩn đoán AI</span><span class="px-2.5 py-1 rounded-full text-xs font-medium bg-white dark:bg-slate-900/40 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700">Gợi ý việc làm</span><span class="px-2.5 py-1 rounded-full text-xs font-medium bg-white dark:bg-slate-900/40 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700">Thử nghiệm A/B</span><span class="px-2.5 py-1 rounded-full text-xs font-medium bg-white dark:bg-slate-900/40 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700">Phân tích</span>
+</div>
+<div class="flex items-center gap-1 text-xs text-slate-400 border-t border-slate-200 dark:border-slate-700 pt-2 mt-2">
+<span class="material-icons-round text-[14px]">link</span>
+<span class="font-medium">nguồn</span>
+<span>web.person-s.com</span>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></body></html>

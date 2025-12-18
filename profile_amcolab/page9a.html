@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Các dự án tiêu biểu (Bổ sung) - AMCOLAB</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&amp;family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Noto+Sans+JP:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#20B2AA", // LightSeaGreen
+                        secondary: "#008B8B", // DarkCyan
+                        "background-light": "#f1f5f9", // Slate-100
+                        "background-dark": "#0f172a", // Slate-900
+                        "card-dark": "#1e293b", // Slate-800
+                    },
+                    fontFamily: {
+                        sans: ['"Noto Sans JP"', '"Inter"', 'sans-serif'],
+                        display: ['"Inter"', 'sans-serif'],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                        'xl': '1rem',
+                        '2xl': '1.5rem',
+                        '3xl': '2rem',
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    }
+                },
+            },
+        };
+    </script>
+<style>
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: rgba(0,0,0,0.05);
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 10px;
+        }
+        .dark .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #475569;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+        .dark .glass {
+            background: rgba(30, 41, 59, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+        .image-gradient {
+            background: linear-gradient(to top, rgba(15, 23, 42, 0.6) 0%, rgba(15, 23, 42, 0) 50%);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark min-h-screen flex flex-col items-center font-sans transition-colors duration-300 py-16 px-4 sm:px-8">
+<div class="relative w-full max-w-7xl bg-white dark:bg-slate-900 rounded-3xl shadow-2xl overflow-hidden flex flex-col min-h-[850px] transition-colors duration-300 border border-slate-200 dark:border-slate-800">
+<div class="absolute right-0 top-0 w-2/3 h-full pointer-events-none z-0 overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-l from-transparent via-white/40 to-white dark:via-slate-900/40 dark:to-slate-900"></div>
+</div>
+<header class="flex justify-between items-start p-8 sm:p-12 border-b border-slate-100 dark:border-slate-800 z-20">
+<div class="flex items-center gap-6">
+<div class="bg-primary/10 dark:bg-primary/20 text-primary font-bold text-4xl leading-none px-5 py-2 rounded-xl border-2 border-primary/20 shadow-sm backdrop-blur-sm flex items-center justify-center" style="line-height: 1.1;">
+                    09
+                </div>
+<div>
+<h1 class="text-3xl font-bold text-slate-800 dark:text-white tracking-wide">Dự án tiêu biểu</h1>
+<p class="text-sm font-semibold text-slate-400 dark:text-slate-500 tracking-[0.2em] uppercase mt-1">Major Project Cases</p>
+</div>
+</div>
+<div class="transition-all">
+<div class="flex items-center gap-3">
+<div class="text-right">
+</div>
+<img alt="AMCOLAB Logo" class="h-12 sm:h-14 object-contain mb-1" src="./logo-amcolab.webp"/>
+</div></div>
+</header>
+<div class="px-8 sm:px-12 pt-8 sm:pt-12 z-20 flex items-center gap-2 mb-6">
+<div class="w-1 h-6 bg-primary rounded-full"></div>
+<h2 class="text-xl font-bold text-slate-700 dark:text-slate-200">Thành tựu phát triển ứng dụng AI</h2>
+</div>
+<div class="flex-grow z-10 px-10 pb-10 overflow-y-auto custom-scrollbar">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 h-full">
+
+<div class="glass rounded-2xl overflow-hidden card-hover transition-all duration-300 flex flex-col h-full group border border-slate-100 dark:border-slate-800">
+<div class="h-48 relative overflow-hidden bg-slate-200 dark:bg-slate-800">
+<img alt="toNotes AI voice note app" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" src="tonote.png"/>
+<div class="absolute inset-0 image-gradient"></div>
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 rounded-full text-xs font-bold bg-white/90 text-purple-600 shadow-sm backdrop-blur-md">Năng suất</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="flex items-center gap-2 mb-3">
+<div class="w-8 h-8 rounded-lg bg-primary/10 dark:bg-primary/20 text-primary flex items-center justify-center">
+<span class="material-icons-round text-lg">mic</span>
+</div>
+<h3 class="text-xl font-bold text-slate-800 dark:text-white group-hover:text-primary transition-colors">toNotes AI / Ứng dụng chuyển đổi âm thanh</h3>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-300 mb-4 leading-relaxed">
+      Ứng dụng ghi chú bằng giọng nói giúp tự động chuyển đổi âm thanh thành văn bản (Transcription), sắp xếp các điểm chính và tạo ghi chú một cách mượt mà. Người dùng có thể nhanh chóng chuyển các ghi chú họp, ý tưởng, nhật ký học tập thành văn bản, giúp việc tìm kiếm và tham chiếu sau này trở nên dễ dàng. Chúng tôi đã đảm nhận toàn bộ quy trình cho đến khi phát hành lên Store.
+    </p>
+<div class="mb-4 pt-3 border-t border-slate-100 dark:border-slate-700/50">
+<p class="text-xs text-slate-500 dark:text-slate-400">
+<span class="font-bold">QUY MÔ / PHẠM VI ĐẢM NHẬN</span><br/>
+        Thiết kế, phát triển, kiểm thử, phát hành lên Store<br/>
+<span class="font-medium">Thời gian phát triển:</span> 2 tháng　<span class="font-medium">Đội ngũ:</span> 3 người (Trọng tâm Flutter)
+      </p>
+</div>
+<div class="bg-slate-50 dark:bg-slate-800/50 rounded-xl p-4 border border-slate-100 dark:border-slate-700/50 mt-auto">
+<p class="text-[10px] font-bold text-slate-400 mb-2 uppercase tracking-wider">Công nghệ chính</p>
+<div class="flex flex-wrap gap-2 mb-3">
+<span class="px-2.5 py-1 rounded-full text-xs font-medium bg-white dark:bg-slate-900/40 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700">Flutter</span><span class="px-2.5 py-1 rounded-full text-xs font-medium bg-white dark:bg-slate-900/40 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700">Firebase</span><span class="px-2.5 py-1 rounded-full text-xs font-medium bg-white dark:bg-slate-900/40 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700">Transcription AI</span><span class="px-2.5 py-1 rounded-full text-xs font-medium bg-white dark:bg-slate-900/40 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700">iOS/Android</span><span class="px-2.5 py-1 rounded-full text-xs font-medium bg-white dark:bg-slate-900/40 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700">Thông báo đẩy</span>
+</div>
+<div class="flex items-center gap-1 text-xs text-slate-400 border-t border-slate-200 dark:border-slate-700 pt-2 mt-2">
+<span class="material-icons-round text-[14px]">link</span>
+<span class="font-medium">nguồn</span>
+<span>App Store (Overo - AI Voice Note Taker)</span>
+</div>
+</div>
+</div>
+</div>
+
+<div class="glass rounded-2xl overflow-hidden card-hover transition-all duration-300 flex flex-col h-full group border border-slate-100 dark:border-slate-800">
+<div class="h-48 relative overflow-hidden bg-slate-200 dark:bg-slate-800">
+<img alt="Petpull pet health management app" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" src="petpull.png"/>
+<div class="absolute inset-0 image-gradient"></div>
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 rounded-full text-xs font-bold bg-white/90 text-purple-600 shadow-sm backdrop-blur-md">Phong cách sống</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="flex items-center gap-2 mb-3">
+<div class="w-8 h-8 rounded-lg bg-primary/10 dark:bg-primary/20 text-primary flex items-center justify-center">
+<span class="material-icons-round text-lg">pets</span>
+</div>
+<h3 class="text-xl font-bold text-slate-800 dark:text-white group-hover:text-primary transition-colors">Petfull - Ứng dụng quản lý sức khỏe thú cưng</h3>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-300 mb-4 leading-relaxed">
+      Ứng dụng di động hỗ trợ quản lý sức khỏe cho thú cưng. Giúp tích lũy hồ sơ hàng ngày về bữa ăn, tình trạng thể chất, đi dạo... để chia sẻ trong gia đình và theo dõi sức khỏe liên tục. Chúng tôi đã thực hiện xuyên suốt từ thiết kế, phát triển đến kiểm thử và phát hành trên cả iOS/Android.
+    </p>
+<div class="mb-4 pt-3 border-t border-slate-100 dark:border-slate-700/50">
+<p class="text-xs text-slate-500 dark:text-slate-400">
+<span class="font-bold">QUY MÔ / PHẠM VI ĐẢM NHẬN</span><br/>
+        Thiết kế, phát triển, kiểm thử, phát hành lên Store<br/>
+<span class="font-medium">Thời gian phát triển:</span> 2 tháng　<span class="font-medium">Đội ngũ:</span> 3 người (iOS/Android)
+      </p>
+</div>
+<div class="bg-slate-50 dark:bg-slate-800/50 rounded-xl p-4 border border-slate-100 dark:border-slate-700/50 mt-auto">
+<p class="text-[10px] font-bold text-slate-400 mb-2 uppercase tracking-wider">Công nghệ chính</p>
+<div class="flex flex-wrap gap-2 mb-3">
+<span class="px-2.5 py-1 rounded-full text-xs font-medium bg-white dark:bg-slate-900/40 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700">Swift</span><span class="px-2.5 py-1 rounded-full text-xs font-medium bg-white dark:bg-slate-900/40 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700">Kotlin</span><span class="px-2.5 py-1 rounded-full text-xs font-medium bg-white dark:bg-slate-900/40 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700">PHP</span><span class="px-2.5 py-1 rounded-full text-xs font-medium bg-white dark:bg-slate-900/40 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700">REST API</span><span class="px-2.5 py-1 rounded-full text-xs font-medium bg-white dark:bg-slate-900/40 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700">MySQL</span>
+</div>
+<div class="flex items-center gap-1 text-xs text-slate-400 border-t border-slate-200 dark:border-slate-700 pt-2 mt-2">
+<span class="material-icons-round text-[14px]">link</span>
+<span class="font-medium">nguồn</span>
+<span>App Store (Petfull)</span>
+</div>
+</div>
+</div>
+</div>
+
+<div class="glass rounded-2xl overflow-hidden card-hover transition-all duration-300 flex flex-col h-full group border border-slate-100 dark:border-slate-800">
+<div class="h-48 relative overflow-hidden bg-slate-200 dark:bg-slate-800">
+<img alt="i-manage Instagram auto reply system" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" src="https://images.unsplash.com/photo-1611926653458-09294b3142bf?auto=format&amp;fit=crop&amp;w=1200&amp;q=70"/>
+<div class="absolute inset-0 image-gradient"></div>
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 rounded-full text-xs font-bold bg-white/90 text-purple-600 shadow-sm backdrop-blur-md">Marketing</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="flex items-center gap-2 mb-3">
+<div class="w-8 h-8 rounded-lg bg-primary/10 dark:bg-primary/20 text-primary flex items-center justify-center">
+<span class="material-icons-round text-lg">forum</span>
+</div>
+<h3 class="text-xl font-bold text-slate-800 dark:text-white group-hover:text-primary transition-colors">i-manage / Hệ thống trả lời tự động Instagram</h3>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-300 mb-4 leading-relaxed">
+      Ứng dụng Web tận dụng Instagram API để tự động trả lời tin nhắn (DM) và bình luận. Chúng tôi đã phát triển hệ thống với cấu trúc cho phép thiết lập các mẫu trả lời, phân nhánh điều kiện và quản lý lịch sử phù hợp với quy trình vận hành. Hỗ trợ từ khâu đăng ký quyền Meta (App Review) đến khi phát hành chính thức.
+    </p>
+<div class="mb-4 pt-3 border-t border-slate-100 dark:border-slate-700/50">
+<p class="text-xs text-slate-500 dark:text-slate-400">
+<span class="font-bold">QUY MÔ / PHẠM VI ĐẢM NHẬN</span><br/>
+        Thiết kế, phát triển, kiểm thử, phát hành chính thức, Đăng ký quyền Meta<br/>
+<span class="font-medium">Thời gian phát triển:</span> 6 tháng　<span class="font-medium">Đội ngũ:</span> 6 người (Web/Backend/QA)
+      </p>
+</div>
+<div class="bg-slate-50 dark:bg-slate-800/50 rounded-xl p-4 border border-slate-100 dark:border-slate-700/50 mt-auto">
+<p class="text-[10px] font-bold text-slate-400 mb-2 uppercase tracking-wider">Công nghệ chính</p>
+<div class="flex flex-wrap gap-2 mb-3">
+<span class="px-2.5 py-1 rounded-full text-xs font-medium bg-white dark:bg-slate-900/40 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700">React</span><span class="px-2.5 py-1 rounded-full text-xs font-medium bg-white dark:bg-slate-900/40 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700">Ruby on Rails</span><span class="px-2.5 py-1 rounded-full text-xs font-medium bg-white dark:bg-slate-900/40 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700">Instagram Graph API</span><span class="px-2.5 py-1 rounded-full text-xs font-medium bg-white dark:bg-slate-900/40 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700">Meta App Review</span><span class="px-2.5 py-1 rounded-full text-xs font-medium bg-white dark:bg-slate-900/40 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700">AWS</span>
+</div>
+<div class="flex items-center gap-1 text-xs text-slate-400 border-t border-slate-200 dark:border-slate-700 pt-2 mt-2">
+<span class="material-icons-round text-[14px]">link</span>
+<span class="font-medium">nguồn</span>
+<span>https://i-manage.net/</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></body></html>
