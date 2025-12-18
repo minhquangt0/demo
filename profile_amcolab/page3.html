@@ -246,4 +246,32 @@
 </div>
 </footer>
 </main>
+<div class="fixed bottom-6 right-6 flex gap-3 z-50">
+  <button id="btnPrev" type="button" aria-label="Trang trước"
+    class="bg-card-light dark:bg-card-dark text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700 p-3 rounded-full shadow-lg border border-slate-200 dark:border-slate-600 transition-all focus:outline-none focus:ring-2 focus:ring-primary group">
+    <span class="material-icons-round group-hover:-translate-x-1 transition-transform">arrow_back</span>
+  </button>
+
+  <button id="btnNext" type="button" aria-label="Trang tiếp theo"
+    class="bg-primary text-white hover:bg-teal-600 p-3 rounded-full shadow-lg shadow-teal-500/30 transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary group">
+    <span class="material-icons-round group-hover:translate-x-1 transition-transform">arrow_forward</span>
+  </button>
+</div>
+
+
+<div class="fixed bottom-6 left-6 z-50">
+<button class="bg-secondary text-white p-3 rounded-full shadow-lg hover:bg-slate-700 transition-colors focus:outline-none focus:ring-2 focus:ring-secondary" onclick="document.documentElement.classList.toggle('dark')">
+<span class="material-icons-round">dark_mode</span>
+</button>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('btnPrev')?.addEventListener('click', () => {
+      window.location.href = './page2.html';
+    });
+    document.getElementById('btnNext')?.addEventListener('click', () => {
+      window.location.href = './page4.html';
+    });
+  });
+</script>
 </body></html>
